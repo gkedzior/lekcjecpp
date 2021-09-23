@@ -1,0 +1,14 @@
+#include <iostream>
+
+using namespacestd;
+int main(int argc, char** argv) {
+	int x, y;
+	cout << "Podaj wiek pierwszej osoby";
+	cin >> x;
+	cout << "Podaj wiek drogiej osoby";
+	cin >> y;
+	if(x<0 || y<0){
+  cout<<"Wiek nie morze być ujemny";
+  }
+	return 0;
+}
