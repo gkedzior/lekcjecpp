@@ -1,14 +1,22 @@
 #include <iostream>
 
-using namespacestd;
+using namespace std;
 int main(int argc, char** argv) {
 	int x, y;
-	cout << "Podaj wiek pierwszej osoby";
+	cout << "Podaj wiek pierwszej osoby ";
 	cin >> x;
-	cout << "Podaj wiek drogiej osoby";
+	cout << "Podaj wiek drogiej osoby ";
 	cin >> y;
-	if(x<0 || y<0){
-  cout<<"Wiek nie morze być ujemny";
+	if(x<=0|| y<=0){
+  cout<<"Wiek nie moze być ujemny";
+  return 0;
+  }
+  if(x==y){
+  cout<< "wiek jest taki sam";
+  }else if(x>y){
+  cout <<"wiek pierwszej osoby jest wiekzy";
+  } else if(x<y){
+  cout <<"wiek drogiej osoby jest wiekszy";
   }
 	return 0;
 }
